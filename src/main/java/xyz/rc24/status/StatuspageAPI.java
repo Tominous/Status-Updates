@@ -149,7 +149,7 @@ class StatuspageAPI
                 ss.setIncident(latestIncident.getString("name"), latestIncident.getString("id"),
                         latestIncidentUpdate.getString("status"), latestIncidentUpdate.getString("body"),
                         latestIncidentUpdate.getString("created_at"));
-                // handleIncidents(incidents);
+                 handleIncidents(incidents);
             }
 
             return ss;
@@ -160,7 +160,7 @@ class StatuspageAPI
             throw new Exception(e);
         }
 
-        // return null;
+         return null;
     }
 
     @SuppressWarnings("ConstantConditions")
